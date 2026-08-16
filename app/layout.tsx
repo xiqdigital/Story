@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
 };
 
-// Masterpiece Ultra-detailed All-in-one Schema.org JSON-LD Structured Data Graph
+// Global Site-Wide Schema.org JSON-LD (Organization, WebSite & Founder)
 const masterAllInOneSchemaGraph = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -84,97 +84,6 @@ const masterAllInOneSchemaGraph = {
       ],
     },
     {
-      '@type': ['DigitalMarketingAgency', 'LocalBusiness'],
-      '@id': `https://${SITE_CONFIG.domain}/#localbusiness`,
-      'name': 'Veiled Story Digital Marketing Agency',
-      'description':
-        'Top-rated digital marketing agency in Zirakpur, Chandigarh, Panchkula & Mohali offering ROI-focused SEO, Google Ads, Meta Ads, SMM, AEO, GEO & custom website design.',
-      'url': `https://${SITE_CONFIG.domain}`,
-      'telephone': SITE_CONFIG.phone,
-      'email': SITE_CONFIG.email,
-      'priceRange': '₹₹',
-      'image': `https://${SITE_CONFIG.domain}/og-image.jpg`,
-      'logo': `https://${SITE_CONFIG.domain}/logo.png`,
-      'parentOrganization': {
-        '@id': `https://${SITE_CONFIG.domain}/#organization`,
-      },
-      'address': {
-        '@type': 'PostalAddress',
-        'streetAddress': 'SCO 14, VIP Road, High Street Market',
-        'addressLocality': 'Zirakpur',
-        'addressRegion': 'Punjab',
-        'postalCode': '140603',
-        'addressCountry': 'IN',
-      },
-      'geo': {
-        '@type': 'GeoCoordinates',
-        'latitude': '30.6425',
-        'longitude': '76.8173',
-      },
-      'openingHoursSpecification': [
-        {
-          '@type': 'OpeningHoursSpecification',
-          'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-          'opens': '09:00',
-          'closes': '20:00',
-        },
-      ],
-      'areaServed': [
-        { '@type': 'City', 'name': 'Zirakpur', 'sameAs': 'https://en.wikipedia.org/wiki/Zirakpur' },
-        { '@type': 'City', 'name': 'Chandigarh', 'sameAs': 'https://en.wikipedia.org/wiki/Chandigarh' },
-        { '@type': 'City', 'name': 'Panchkula', 'sameAs': 'https://en.wikipedia.org/wiki/Panchkula' },
-        { '@type': 'City', 'name': 'Mohali', 'sameAs': 'https://en.wikipedia.org/wiki/Mohali' },
-      ],
-      'aggregateRating': {
-        '@type': 'AggregateRating',
-        'ratingValue': '5.0',
-        'reviewCount': '148',
-        'bestRating': '5',
-        'worstRating': '1',
-      },
-      'review': [
-        {
-          '@type': 'Review',
-          'author': { '@type': 'Person', 'name': 'Rajesh Sharma' },
-          'datePublished': '2026-07-15',
-          'reviewRating': { '@type': 'Rating', 'ratingValue': '5', 'bestRating': '5', 'worstRating': '1' },
-          'reviewBody':
-            'Veiled Story Digital Marketing Agency doubled our qualified real estate inquiries in Zirakpur within 60 days using targeted Google Ads and Local SEO.',
-          'itemReviewed': {
-            '@type': 'LocalBusiness',
-            '@id': `https://${SITE_CONFIG.domain}/#localbusiness`,
-            'name': 'Veiled Story Digital Marketing Agency',
-          },
-        },
-        {
-          '@type': 'Review',
-          'author': { '@type': 'Person', 'name': 'Dr. Vikas Verma' },
-          'datePublished': '2026-06-20',
-          'reviewRating': { '@type': 'Rating', 'ratingValue': '5', 'bestRating': '5', 'worstRating': '1' },
-          'reviewBody':
-            'Outstanding digital marketing & SEO services in Tricity. They brought our dental clinic to the top #1 spot on Google Maps in Chandigarh.',
-          'itemReviewed': {
-            '@type': 'LocalBusiness',
-            '@id': `https://${SITE_CONFIG.domain}/#localbusiness`,
-            'name': 'Veiled Story Digital Marketing Agency',
-          },
-        },
-        {
-          '@type': 'Review',
-          'author': { '@type': 'Person', 'name': 'Priya Kapoor' },
-          'datePublished': '2026-08-02',
-          'reviewRating': { '@type': 'Rating', 'ratingValue': '5', 'bestRating': '5', 'worstRating': '1' },
-          'reviewBody':
-            'Best website design and digital marketing agency! Their Liquid Glass Morphism design and lead generation strategy turned our business around.',
-          'itemReviewed': {
-            '@type': 'LocalBusiness',
-            '@id': `https://${SITE_CONFIG.domain}/#localbusiness`,
-            'name': 'Veiled Story Digital Marketing Agency',
-          },
-        },
-      ],
-    },
-    {
       '@type': 'Person',
       '@id': `https://${SITE_CONFIG.domain}/#vishal-sahani`,
       'name': 'Vishal Sahani',
@@ -201,53 +110,6 @@ const masterAllInOneSchemaGraph = {
       ],
     },
     {
-      '@type': 'Service',
-      '@id': `https://${SITE_CONFIG.domain}/#service-seo`,
-      'name': 'Search Engine Optimization (SEO) & Local Map Pack Dominance',
-      'serviceType': 'SEO Services',
-      'description':
-        'Comprehensive white-hat SEO, technical speed optimization, schema markup, and Google Business Profile rank boosting for Zirakpur & Tricity businesses.',
-      'provider': { '@id': `https://${SITE_CONFIG.domain}/#localbusiness` },
-      'areaServed': ['Zirakpur', 'Chandigarh', 'Panchkula', 'Mohali', 'Tricity'],
-    },
-    {
-      '@type': 'Service',
-      '@id': `https://${SITE_CONFIG.domain}/#service-ppc`,
-      'name': 'Google Ads PPC & Meta Ad Lead Campaigns',
-      'serviceType': 'Pay Per Click Advertising',
-      'description':
-        'High-ROI search ads, performance max campaigns, Meta lead ads, and retargeting workflows for rapid lead generation.',
-      'provider': { '@id': `https://${SITE_CONFIG.domain}/#localbusiness` },
-      'areaServed': ['Zirakpur', 'Chandigarh', 'Panchkula', 'Mohali', 'Pan-India'],
-    },
-    {
-      '@type': 'Service',
-      '@id': `https://${SITE_CONFIG.domain}/#service-web`,
-      'name': 'Liquid Glass Website Design & Development',
-      'serviceType': 'Web Design & Development',
-      'description':
-        'Custom high-performance websites built with Next.js, Tailwind CSS, Core Web Vitals 90+ speed, and liquid glass morphism visuals.',
-      'provider': { '@id': `https://${SITE_CONFIG.domain}/#localbusiness` },
-      'areaServed': ['Zirakpur', 'Chandigarh', 'Panchkula', 'Mohali'],
-    },
-    {
-      '@type': 'NewsArticle',
-      '@id': `https://${SITE_CONFIG.domain}/#news-article`,
-      'headline': 'Masterpiece Digital Growth Blueprint 2026: Dominating Search, Social & AI Overview',
-      'description':
-        'Detailed insights on combining SEO, GEO, AEO, and Liquid Glass web design to dominate search engines and generate high-intent customer leads in 2026.',
-      'image': [`https://${SITE_CONFIG.domain}/og-image.jpg`],
-      'datePublished': '2026-08-01T08:00:00+05:30',
-      'dateModified': '2026-08-10T10:00:00+05:30',
-      'mainEntityOfPage': `https://${SITE_CONFIG.domain}`,
-      'author': {
-        '@id': `https://${SITE_CONFIG.domain}/#vishal-sahani`,
-      },
-      'publisher': {
-        '@id': `https://${SITE_CONFIG.domain}/#organization`,
-      },
-    },
-    {
       '@type': 'WebSite',
       '@id': `https://${SITE_CONFIG.domain}/#website`,
       'url': `https://${SITE_CONFIG.domain}`,
@@ -255,15 +117,6 @@ const masterAllInOneSchemaGraph = {
       'description': 'Official website of Veiled Story Digital Marketing Agency in Zirakpur, Chandigarh, Panchkula & Mohali.',
       'publisher': { '@id': `https://${SITE_CONFIG.domain}/#organization` },
       'inLanguage': 'en-IN',
-    },
-    {
-      '@type': 'WebPage',
-      '@id': `https://${SITE_CONFIG.domain}/#webpage`,
-      'url': `https://${SITE_CONFIG.domain}`,
-      'name': 'Veiled Story Digital Marketing Agency | Home',
-      'description': 'Leading digital marketing agency in Zirakpur, Chandigarh, Panchkula & Mohali.',
-      'isPartOf': { '@id': `https://${SITE_CONFIG.domain}/#website` },
-      'about': { '@id': `https://${SITE_CONFIG.domain}/#organization` },
     },
   ],
 };

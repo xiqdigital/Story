@@ -81,7 +81,7 @@ export default async function SubServicePage({ params }: SubServicePageProps) {
         'serviceType': subService.primaryKeyword,
         'description': subService.metaDescription,
         'provider': {
-          '@id': `https://${SITE_CONFIG.domain}/#localbusiness`,
+          '@id': `https://${SITE_CONFIG.domain}/#organization`,
         },
         'areaServed': [
           { '@type': 'City', 'name': 'Zirakpur', 'sameAs': 'https://en.wikipedia.org/wiki/Zirakpur' },

@@ -99,20 +99,7 @@ export default function DigitalMarketingCompanyChandigarhPage() {
         description:
           'Comprehensive digital marketing services in Chandigarh including SEO, Google Ads PPC, Meta Ads SMM, Website Design, Content Marketing, ORM, Email Marketing, and AI Search Optimization (AEO & GEO).',
         provider: {
-          '@type': 'LocalBusiness',
-          '@id': `https://${SITE_CONFIG.domain}/#localbusiness`,
-          name: 'Veiled Story Digital Marketing Agency',
-          url: `https://${SITE_CONFIG.domain}`,
-          telephone: SITE_CONFIG.phone,
-          email: SITE_CONFIG.email,
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: 'SCO 14, 2nd Floor, VIP Road, High Street Market',
-            addressLocality: 'Zirakpur',
-            addressRegion: 'Punjab',
-            postalCode: '140603',
-            addressCountry: 'IN',
-          },
+          '@id': `https://${SITE_CONFIG.domain}/#organization`,
         },
         areaServed: [
           'Chandigarh',

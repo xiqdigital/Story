@@ -94,20 +94,7 @@ export default function SeoCompanyInZirakpurPage() {
         description:
           'Comprehensive SEO services in Zirakpur including On-Page SEO, Technical SEO, Off-Page Link Building, Google Maps Local SEO, E-Commerce SEO, and AI Search Optimization (AEO & GEO).',
         provider: {
-          '@type': 'LocalBusiness',
-          '@id': `https://${SITE_CONFIG.domain}/#localbusiness`,
-          name: 'Veiled Story Digital Marketing Agency',
-          url: `https://${SITE_CONFIG.domain}`,
-          telephone: SITE_CONFIG.phone,
-          email: SITE_CONFIG.email,
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: 'SCO 14, 2nd Floor, VIP Road, High Street Market',
-            addressLocality: 'Zirakpur',
-            addressRegion: 'Punjab',
-            postalCode: '140603',
-            addressCountry: 'IN',
-          },
+          '@id': `https://${SITE_CONFIG.domain}/#organization`,
         },
         areaServed: [
           'Zirakpur',
