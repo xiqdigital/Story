@@ -186,6 +186,12 @@ export const Navbar: React.FC<NavbarProps> = ({
                       <div className="text-[11px] font-bold text-[#A2C0E6] border-b border-[#A2C0E6]/25 pb-1 flex items-center gap-1">
                         <Zap className="w-3 h-3 text-[#A2C0E6]" /> Performance & Ads
                       </div>
+                      <Link href="/lead-generation-company-in-zirakpur" className="p-1.5 rounded-lg bg-[#A2C0E6]/15 hover:bg-[#A2C0E6]/30 hover:text-white transition block border border-[#A2C0E6]/40">
+                        <div className="font-bold text-white flex items-center gap-1">
+                          Lead Generation Zirakpur <Sparkles className="w-2.5 h-2.5 text-[#A2C0E6]" />
+                        </div>
+                        <p className="text-[10px] text-[#A2C0E6]">B2B & Real Estate Funnels</p>
+                      </Link>
                       <Link href="/digital-marketing-in-pharma-industry" className="p-1.5 rounded-lg bg-[#1E3E62]/40 hover:bg-[#1E3E62]/80 hover:text-white transition block border border-[#A2C0E6]/30">
                         <div className="font-bold text-[#A2C0E6] flex items-center gap-1">
                           Pharma Digital Marketing <Sparkles className="w-2.5 h-2.5 text-emerald-400" />

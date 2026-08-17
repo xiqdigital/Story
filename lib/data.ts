@@ -98,6 +98,11 @@ export const SERVICES_DATA: ServiceCategory[] = [
         slug: "google-ads-agency"
       },
       {
+        title: "Lead Generation Company in Zirakpur Page",
+        desc: "Specialized high-intent B2B and B2C lead acquisition page for real estate, pharma, education, and services in Zirakpur, Chandigarh & Tricity.",
+        slug: "/lead-generation-company-in-zirakpur"
+      },
+      {
         title: "Lead Generation Campaigns",
         desc: "Design fast landing pages and lead forms that convert website visitors into phone calls and direct WhatsApp messages.",
         slug: "lead-generation"

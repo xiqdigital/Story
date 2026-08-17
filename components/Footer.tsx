@@ -53,6 +53,7 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2">
               <li><Link href="/digital-marketing-company-chandigarh" className="hover:text-white transition font-bold text-[#A2C0E6]">• Digital Marketing Chandigarh</Link></li>
+              <li><Link href="/lead-generation-company-in-zirakpur" className="hover:text-white transition font-bold text-[#A2C0E6]">• Lead Generation in Zirakpur</Link></li>
               <li><Link href="/digital-marketing-in-pharma-industry" className="hover:text-white transition font-bold text-emerald-400">• Digital Marketing in Pharma</Link></li>
               <li><Link href="/seo-company-in-zirakpur" className="hover:text-white transition font-bold text-[#A2C0E6]">• SEO Company in Zirakpur</Link></li>
               <li><Link href="/services/seo-company-zirakpur" className="hover:text-[#A2C0E6] transition">• SEO Company in Zirakpur</Link></li>
