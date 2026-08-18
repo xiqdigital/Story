@@ -5,6 +5,8 @@ import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { SITE_CONFIG } from '@/lib/data';
 import { SeoPageCTA } from '@/components/SeoPageCTA';
+import { SeoImagePlaceholder } from '@/components/SeoImagePlaceholder';
+import { LeadGenAiCalculator } from '@/components/LeadGenAiCalculator';
 import {
   Target,
   Sparkles,
@@ -39,7 +41,9 @@ import {
   Send,
   HelpCircle,
   Phone,
-  Laptop
+  Laptop,
+  Calculator,
+  Bot
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -114,6 +118,13 @@ export default function LeadGenerationCompanyInZirakpurPage() {
         headline: 'Lead Generation Company in Zirakpur – Complete 2026 Strategic Blueprint for Predictable Revenue',
         description:
           'Comprehensive guide and strategic framework for high-intent customer acquisition and B2B lead generation in Zirakpur and Tricity by Vishal Sahani at Veiled Story.',
+        image: {
+          '@type': 'ImageObject',
+          url: `https://${SITE_CONFIG.domain}/images/lead-generation-company-in-zirakpur-funnel.webp`,
+          width: 1200,
+          height: 675,
+          caption: 'Lead Generation Company in Zirakpur - Multi-Channel ROI Funnel Architecture & Attribution Workflow',
+        },
         author: {
           '@type': 'Person',
           '@id': `https://${SITE_CONFIG.domain}/#vishal-sahani`,
@@ -328,7 +339,14 @@ export default function LeadGenerationCompanyInZirakpurPage() {
 
           <div className="flex flex-wrap gap-4 pt-2">
             <SeoPageCTA variant="primary" buttonText="Book Free Growth Strategy Call" />
-            <SeoPageCTA variant="secondary" buttonText="Request Complete Funnel Audit" />
+            <a
+              href="#ai-price-calculator"
+              className="px-6 py-3.5 rounded-2xl bg-[#A2C0E6]/15 hover:bg-[#A2C0E6]/25 border border-[#A2C0E6]/35 text-white font-bold text-xs sm:text-sm flex items-center gap-2 transition"
+            >
+              <Calculator className="w-4 h-4 text-[#A2C0E6]" />
+              <span>Real-Time AI Pricing &amp; ROI Calculator</span>
+              <ArrowRight className="w-4 h-4 text-[#A2C0E6]" />
+            </a>
           </div>
 
           {/* NLP / AI Overview Direct Answer Box */}
@@ -342,6 +360,26 @@ export default function LeadGenerationCompanyInZirakpurPage() {
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
               <strong>Veiled Story</strong> is a specialized performance marketing and lead generation company headquartered in Zirakpur on VIP Road. Unlike generic digital marketing agencies that sell vanity impressions and clicks, we build full-funnel customer acquisition ecosystems. We combine hyper-targeted <strong>Google Search Ads</strong>, <strong>Meta (Facebook & Instagram) AI Lead Funnels</strong>, <strong>Local Google 3-Pack SEO</strong>, <strong>High-Converting Liquid Glass Landing Pages</strong>, and <strong>Automated Lead Scoring Systems</strong> to deliver exclusive, verified inquiries with validated phone numbers, verified intent, and measurable Cost Per Acquisition (CPA).
             </p>
+          </div>
+
+          {/* Hero Section Featured Image Placeholder */}
+          <div className="pt-4 max-w-5xl">
+            <SeoImagePlaceholder
+              altText="Lead Generation Company in Zirakpur - Multi-Channel ROI Funnel Architecture & Attribution Workflow"
+              captionTitle="Figure 1: Full-Funnel Multi-Channel Customer Acquisition Ecosystem by Veiled Story Zirakpur"
+              category="Lead Generation Architecture Blueprint"
+              dimensions="1200 × 675 (16:9)"
+              aspectRatio="16/9"
+              icon={Target}
+              badgeText="Zirakpur Growth Framework"
+              schemaKeywords={[
+                'Lead Generation Company in Zirakpur',
+                'Performance Marketing Tricity',
+                'Multi-Channel Funnel',
+                'High Intent Inquiries'
+              ]}
+              mockType="funnel"
+            />
           </div>
 
         </div>
@@ -392,6 +430,21 @@ export default function LeadGenerationCompanyInZirakpurPage() {
                     <span>Smart Bidding Optimization (tCPA & Target ROAS)</span>
                   </li>
                 </ul>
+
+                {/* Service 1 Image Placeholder */}
+                <div className="pt-2">
+                  <SeoImagePlaceholder
+                    altText="Google Ads Lead Generation Campaign Dashboard & High-Intent Keyword Architecture for Zirakpur Businesses"
+                    captionTitle="Google Search Ads Intent Mining & Negative Keyword Scrubbing"
+                    category="Google Ads PPC"
+                    dimensions="800 × 450 (16:9)"
+                    aspectRatio="16/9"
+                    icon={Search}
+                    badgeText="Search Ad Architecture"
+                    schemaKeywords={['Google Ads Zirakpur', 'PPC Management', 'High Intent Keyword']}
+                    mockType="search_ad"
+                  />
+                </div>
               </div>
               <div className="pt-4 border-t border-slate-800">
                 <Link href="/services/google-ads-agency" className="text-xs font-semibold text-[#A2C0E6] hover:text-white flex items-center gap-1">
@@ -426,6 +479,21 @@ export default function LeadGenerationCompanyInZirakpurPage() {
                     <span>Lookalike (LAL) Audiences & Dynamic Retargeting</span>
                   </li>
                 </ul>
+
+                {/* Service 2 Image Placeholder */}
+                <div className="pt-2">
+                  <SeoImagePlaceholder
+                    altText="Meta Facebook and Instagram Ads Lead Funnel with WhatsApp Click-to-Chat Integration in Zirakpur"
+                    captionTitle="Meta Ads Instant Lead Capture & Direct WhatsApp Chat Flow"
+                    category="Meta Ads Funnel"
+                    dimensions="800 × 450 (16:9)"
+                    aspectRatio="16/9"
+                    icon={MessageSquare}
+                    badgeText="Meta Lead Ads"
+                    schemaKeywords={['Meta Ads Zirakpur', 'Facebook Lead Forms', 'Instagram Ads']}
+                    mockType="social_ad"
+                  />
+                </div>
               </div>
               <div className="pt-4 border-t border-slate-800">
                 <Link href="/services/meta-ads-agency" className="text-xs font-semibold text-[#A2C0E6] hover:text-white flex items-center gap-1">
@@ -460,6 +528,21 @@ export default function LeadGenerationCompanyInZirakpurPage() {
                     <span>Organic Inbound Direct Phone Call Generation</span>
                   </li>
                 </ul>
+
+                {/* Service 3 Image Placeholder */}
+                <div className="pt-2">
+                  <SeoImagePlaceholder
+                    altText="Google Map 3-Pack Local SEO Ranking on VIP Road Zirakpur for High-Intent Phone Calls"
+                    captionTitle="Local Google 3-Pack Map Rank Dominance & Inbound Calls"
+                    category="Local SEO Zirakpur"
+                    dimensions="800 × 450 (16:9)"
+                    aspectRatio="16/9"
+                    icon={MapPin}
+                    badgeText="Google 3-Pack Rank"
+                    schemaKeywords={['Local SEO Zirakpur', 'VIP Road Map Ranking', 'GBP Optimization']}
+                    mockType="map_rank"
+                  />
+                </div>
               </div>
               <div className="pt-4 border-t border-slate-800">
                 <Link href="/seo-company-in-zirakpur" className="text-xs font-semibold text-[#A2C0E6] hover:text-white flex items-center gap-1">
@@ -494,6 +577,21 @@ export default function LeadGenerationCompanyInZirakpurPage() {
                     <span>Dynamic Keyword Replacement for 1:1 Ad Match</span>
                   </li>
                 </ul>
+
+                {/* Service 4 Image Placeholder */}
+                <div className="pt-2">
+                  <SeoImagePlaceholder
+                    altText="High-Converting Mobile-First Liquid Glass Landing Page Design with Sub-Second Speed for Zirakpur Inquiries"
+                    captionTitle="Sub-Second Core Web Vitals Next.js Landing Page with High Conversion Rate"
+                    category="Landing Page CRO"
+                    dimensions="800 × 450 (16:9)"
+                    aspectRatio="16/9"
+                    icon={Laptop}
+                    badgeText="Core Web Vitals 100"
+                    schemaKeywords={['Landing Page Design Zirakpur', 'CRO Optimization', 'Next.js Fast Funnel']}
+                    mockType="landing_page"
+                  />
+                </div>
               </div>
               <div className="pt-4 border-t border-slate-800">
                 <Link href="/services/custom-web-designing" className="text-xs font-semibold text-[#A2C0E6] hover:text-white flex items-center gap-1">
@@ -528,6 +626,21 @@ export default function LeadGenerationCompanyInZirakpurPage() {
                     <span>Account-Based Marketing (ABM) Pipeline Building</span>
                   </li>
                 </ul>
+
+                {/* Service 5 Image Placeholder */}
+                <div className="pt-2">
+                  <SeoImagePlaceholder
+                    altText="B2B LinkedIn Account Based Marketing ABM Pipeline for Decision Makers in Chandigarh Tricity"
+                    captionTitle="LinkedIn ABM Pipeline for C-Suite & Procurement Directors"
+                    category="B2B LinkedIn ABM"
+                    dimensions="800 × 450 (16:9)"
+                    aspectRatio="16/9"
+                    icon={Briefcase}
+                    badgeText="ABM Enterprise"
+                    schemaKeywords={['B2B Lead Generation Zirakpur', 'LinkedIn ABM', 'Corporate Leads']}
+                    mockType="dashboard"
+                  />
+                </div>
               </div>
               <div className="pt-4 border-t border-slate-800">
                 <Link href="/services/lead-generation" className="text-xs font-semibold text-[#A2C0E6] hover:text-white flex items-center gap-1">
@@ -562,6 +675,21 @@ export default function LeadGenerationCompanyInZirakpurPage() {
                     <span>Real-Time Google Sheets & CRM Synchronization</span>
                   </li>
                 </ul>
+
+                {/* Service 6 Image Placeholder */}
+                <div className="pt-2">
+                  <SeoImagePlaceholder
+                    altText="Real-Time 10-Second CRM and WhatsApp Lead Notification Workflow for Sales Teams"
+                    captionTitle="Automated Instant 10-Second Lead Dispatch Architecture & WhatsApp Alert System"
+                    category="CRM & Speed-to-Lead"
+                    dimensions="800 × 450 (16:9)"
+                    aspectRatio="16/9"
+                    icon={Zap}
+                    badgeText="10s Dispatch Router"
+                    schemaKeywords={['WhatsApp API Lead Dispatch', 'Speed to Lead', 'CRM Automation']}
+                    mockType="workflow"
+                  />
+                </div>
               </div>
               <div className="pt-4 border-t border-slate-800">
                 <SeoPageCTA variant="primary" buttonText="Schedule Setup Call" />
@@ -571,6 +699,9 @@ export default function LeadGenerationCompanyInZirakpurPage() {
           </div>
         </div>
       </section>
+
+      {/* INTERACTIVE AI REAL-TIME PRICING & ROI CALCULATOR (MASTERPIECE SECTION) */}
+      <LeadGenAiCalculator />
 
       {/* SECTION 2: Specialized Lead Generation for High-Growth Industries */}
       <section className="py-20 border-b border-[#A2C0E6]/15 relative bg-[#04080e]/60">
@@ -625,6 +756,57 @@ export default function LeadGenerationCompanyInZirakpurPage() {
                         </li>
                       ))}
                     </ul>
+                  </div>
+
+                  {/* Industry-specific Image Placeholder */}
+                  <div className="pt-2">
+                    <SeoImagePlaceholder
+                      altText={
+                        idx === 0
+                          ? 'Real Estate Buyer Inquiries Funnel for PR7 Airport Road Flats and Luxury Villas in Zirakpur'
+                          : idx === 1
+                          ? 'PCD Pharma Franchise Monopoly Rights and Third-Party Manufacturing B2B Lead Funnel in Tricity and Baddi'
+                          : idx === 2
+                          ? 'Education and Study Abroad Admissions Lead Generation Campaign Architecture'
+                          : 'Enterprise IT and Software B2B Contract Acquisition Sales Pipeline in Mohali IT City'
+                      }
+                      captionTitle={
+                        idx === 0
+                          ? 'Real Estate Multi-Channel Buyer Funnel (Meta Video + WhatsApp Site Booking)'
+                          : idx === 1
+                          ? 'Pharma PCD Franchise & B2B Manufacturer Acquisition Funnel'
+                          : idx === 2
+                          ? 'Education & Coaching Admissions Surge Lead Engine'
+                          : 'Enterprise IT & SaaS B2B Contract Acquisition Pipeline'
+                      }
+                      category={
+                        idx === 0
+                          ? 'Real Estate Funnel'
+                          : idx === 1
+                          ? 'Pharma B2B Funnel'
+                          : idx === 2
+                          ? 'Admissions Funnel'
+                          : 'Enterprise B2B'
+                      }
+                      dimensions="700 × 394 (16:9)"
+                      aspectRatio="16/9"
+                      icon={IconComp}
+                      badgeText="Industry Blueprint"
+                      schemaKeywords={[
+                        ind.title,
+                        'Lead Generation Zirakpur',
+                        'High Intent Buyer Funnel'
+                      ]}
+                      mockType={
+                        idx === 0
+                          ? 'social_ad'
+                          : idx === 1
+                          ? 'dashboard'
+                          : idx === 2
+                          ? 'funnel'
+                          : 'workflow'
+                      }
+                    />
                   </div>
 
                   <div className="pt-2">
@@ -797,6 +979,26 @@ export default function LeadGenerationCompanyInZirakpurPage() {
             })}
           </div>
 
+          {/* Framework Overview Visual Blueprint */}
+          <div className="pt-4 max-w-5xl mx-auto">
+            <SeoImagePlaceholder
+              altText="5-Step Proven Lead Generation Framework Flowchart from Search Intent to Sales Qualified Lead"
+              captionTitle="Figure 4: 5-Phase End-to-End Acquisition Architecture (Intent → Landing Page → Multi-Channel → OTP Scoring → Scaling)"
+              category="Proprietary Acquisition Methodology"
+              dimensions="1200 × 600 (2:1)"
+              aspectRatio="21/9"
+              icon={Compass}
+              badgeText="Scientific Acquisition Engine"
+              schemaKeywords={[
+                '5-Step Lead Generation Framework',
+                'Sales Qualified Lead Pipeline',
+                'Conversion Rate Optimization',
+                'Zirakpur Growth Strategy'
+              ]}
+              mockType="funnel"
+            />
+          </div>
+
         </div>
       </section>
 
@@ -867,6 +1069,26 @@ export default function LeadGenerationCompanyInZirakpurPage() {
               </div>
             </div>
 
+          </div>
+
+          {/* Performance Analytics Telemetry Image Placeholder */}
+          <div className="pt-2 max-w-5xl mx-auto">
+            <SeoImagePlaceholder
+              altText="Lead Generation Key Performance Indicators Dashboard Tracking CPL, MQL, SQL, CAC, and ROAS"
+              captionTitle="Figure 5: Enterprise Analytics Dashboard – Real-Time Tracking of CPQL, MQL-to-SQL Velocity, and ROAS"
+              category="Financial & Performance Telemetry"
+              dimensions="1200 × 675 (16:9)"
+              aspectRatio="16/9"
+              icon={BarChart3}
+              badgeText="Live Client Reporting"
+              schemaKeywords={[
+                'CPL Benchmark Zirakpur',
+                'MQL to SQL Funnel',
+                'ROAS Tracking Dashboard',
+                'Customer Acquisition Cost CAC'
+              ]}
+              mockType="analytics"
+            />
           </div>
 
           {/* Pricing & CPL Benchmark Table */}
